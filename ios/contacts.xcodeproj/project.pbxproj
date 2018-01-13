@@ -271,6 +271,13 @@
 			remoteGlobalIDString = 358F4ED71D1E81A9004DF814;
 			remoteInfo = RCTBlob;
 		};
+		B81EB7AE200ABBD600FEC0F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4286BF473CF4CEDA7BB940B /* RNVectorIcons.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5DBEB1501B18CEA900B34395;
+			remoteInfo = RNVectorIcons;
+		};
 		B89B57602009744800F60D4B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4C3014B863B84719BA6FEC2C /* RCTContacts.xcodeproj */;
@@ -392,6 +399,7 @@
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		D0788EFB6BE34CC898DD7E22 /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
 		D094E8AA952C4C2CAC5C06C5 /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
+		F4286BF473CF4CEDA7BB940B /* RNVectorIcons.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNVectorIcons.xcodeproj; path = "../node_modules/react-native-vector-icons/RNVectorIcons.xcodeproj"; sourceTree = "<group>"; };
 		FE80DA6BFD3F4AA085F7FDEF /* RNSpinkit.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNSpinkit.xcodeproj; path = "../node_modules/react-native-spinkit/ios/RNSpinkit.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -629,6 +637,7 @@
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
 				4C3014B863B84719BA6FEC2C /* RCTContacts.xcodeproj */,
 				FE80DA6BFD3F4AA085F7FDEF /* RNSpinkit.xcodeproj */,
+				F4286BF473CF4CEDA7BB940B /* RNVectorIcons.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -673,6 +682,14 @@
 			children = (
 				ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */,
 				2D16E6721FA4F8DC00B85C8A /* libRCTBlob-tvOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B81EB783200ABBD600FEC0F7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B81EB7AF200ABBD600FEC0F7 /* libRNVectorIcons.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -860,6 +877,10 @@
 				{
 					ProductGroup = B89B57582009744800F60D4B /* Products */;
 					ProjectRef = FE80DA6BFD3F4AA085F7FDEF /* RNSpinkit.xcodeproj */;
+				},
+				{
+					ProductGroup = B81EB783200ABBD600FEC0F7 /* Products */;
+					ProjectRef = F4286BF473CF4CEDA7BB940B /* RNVectorIcons.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -1074,6 +1095,13 @@
 			fileType = archive.ar;
 			path = libRCTBlob.a;
 			remoteRef = ADBDB9261DFEBF0700ED6528 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B81EB7AF200ABBD600FEC0F7 /* libRNVectorIcons.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNVectorIcons.a;
+			remoteRef = B81EB7AE200ABBD600FEC0F7 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		B89B57612009744800F60D4B /* libRCTContacts.a */ = {
@@ -1306,6 +1334,7 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-contacts/ios/RCTContacts",
 					"$(SRCROOT)/../node_modules/react-native-spinkit/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
 				);
 				INFOPLIST_FILE = contactsTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1334,6 +1363,7 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-contacts/ios/RCTContacts",
 					"$(SRCROOT)/../node_modules/react-native-spinkit/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
 				);
 				INFOPLIST_FILE = contactsTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1363,6 +1393,7 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-contacts/ios/RCTContacts",
 					"$(SRCROOT)/../node_modules/react-native-spinkit/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
 				);
 				INFOPLIST_FILE = contacts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1385,6 +1416,7 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-contacts/ios/RCTContacts",
 					"$(SRCROOT)/../node_modules/react-native-spinkit/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
 				);
 				INFOPLIST_FILE = contacts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1414,6 +1446,7 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-contacts/ios/RCTContacts",
 					"$(SRCROOT)/../node_modules/react-native-spinkit/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
 				);
 				INFOPLIST_FILE = "contacts-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1451,6 +1484,7 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-contacts/ios/RCTContacts",
 					"$(SRCROOT)/../node_modules/react-native-spinkit/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
 				);
 				INFOPLIST_FILE = "contacts-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
